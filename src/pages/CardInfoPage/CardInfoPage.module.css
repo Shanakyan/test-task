@@ -1,0 +1,126 @@
+.cardInfoPage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 42px;
+  margin-bottom: 36px;
+  /* position: relative;*/
+}
+
+.cardInfoPage_img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  /* border-radius: 150px; */
+  border: 5px solid #f2f2f7;
+  background: cover no-repeat;
+  align-self: center;
+}
+.cardInfoPage_name {
+  color: #081f32;
+  text-align: center;
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Roboto;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  /* margin-bottom: 42px; */
+}
+.cardInfoPage_wrapp {
+  display: flex;
+}
+
+.cardInfoPage_information {
+  font-size: 25px;
+  text-align: center;
+}
+.carInfoPage_informations_list {
+  width: 100%;
+  /* max-width: 413px; */
+  color: #8e8e93;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  display: flex;
+  gap: 316px;
+  margin-bottom: 36px;
+}
+.cardInfoPage_wrap {
+  width: 100%;
+  max-width: 413px;
+  color: #8e8e93;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.cardInfoPage_wrap h4 {
+  font-size: 4px;
+}
+.cardInfo_text {
+  width: 100%;
+  max-width: 413px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.08);
+  margin: 9px 0 0 16px;
+  padding-bottom: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-feature-settings: "liga" off, "clig" off;
+  position: relative;
+}
+.cardInfo_text h4 {
+  color: #081f32;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+.cardInfo_text p {
+  font-size: 14px;
+}
+.cardInfo_text_item {
+  color: #6e798c;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+}
+.CardInfoPage_informations_list {
+  width: 100%;
+  max-width: 413px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardGoBackBtn {
+  font-size: 12px;
+  all: unset;
+  /* position: absolute;
+  top: 12px;
+  right: 12px; */
+  color: #8e8e93;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.cardGoBackBtn:hover {
+  cursor: url("/src/assets/cursor.svg"), pointer;
+  color: rgb(48, 44, 44);
+  /* display: block; */
+  /* color: #fff; */
+}

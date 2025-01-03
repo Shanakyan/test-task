@@ -1,0 +1,85 @@
+.wrapp {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.title {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.wrappBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.backBtn {
+  /* background-image: url("../../assets/arrow.svg"); */
+  border: none;
+}
+.form {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formItem {
+  position: relative;
+  display: flex;
+
+  flex-direction: column;
+  gap: 5px;
+}
+.input {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgb(177, 181, 181);
+  margin-bottom: 15px;
+  width: 100%;
+}
+.createCharacterBtn {
+  width: 150px;
+  /* height: 56px; */
+  padding: 10px 12px;
+
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid rgb(177, 181, 181);
+  outline: rgb(115, 172, 203);
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.6);
+  cursor: url("/src/assets/cursor.svg"), pointer;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+  transition: 0.4s all ease-in-out;
+  align-self: center;
+}
+.createBtn:hover {
+  color: #000;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.formItem:has(input[type="checkbox"]) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
