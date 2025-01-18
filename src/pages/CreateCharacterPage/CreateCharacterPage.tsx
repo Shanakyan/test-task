@@ -42,7 +42,7 @@ export const CreateCharacterPage = () => {
               },
             })}
           />
-          {/* 3. Сообщение об ошибке */}
+          
           {errors.name && <p className={s.error}>{errors.name.message}</p>}
         </div>
 

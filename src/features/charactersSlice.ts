@@ -34,7 +34,6 @@ export interface Character {
   yearOfBirth: number;
 }
 
-/* createAsyncThunk — это утилита из Redux Toolkit, которая помогает создавать асинхронные действия (actions) в Redux. Она используется для обработки операций, таких как запросы к API, с автоматическим управлением состоянием загрузки, успешного выполнения или ошибки. */
 /* Создаём асинхронную функция для запроса к /api/characters */
 export const fetchCharacters = createAsyncThunk(
   "characters/fetchCharacters",
@@ -56,8 +55,6 @@ const charactersSlice = createSlice({
       state.charactersState = state.charactersState.filter(
         (character: Character) => character.id !== action.payload // id персонажа, которого нужно удалить
       );
-
-      /* ДОЛЖНА УДАЛЯТЬСЯ ИЗ ИЗБРАННОГО КОГДА УДАЛЯЕТСЯ ВООБЩЕ. */
       state.favoritesState = state.favoritesState.filter(
         (character: Character) => character.id !== action.payload // id персонажа, которого нужно удалить
       );
@@ -67,7 +64,7 @@ const charactersSlice = createSlice({
         ...action.payload,
         id: Date.now(),
         image: defaultImage,
-      }); //push
+      });
     },
     toggleFavorite: (state, action) => {
       console.log(action.payload);
@@ -107,10 +104,6 @@ const charactersSlice = createSlice({
     });
   },
 });
-
-/* 4. Экспортируем редьюсер, для того что бы связать Slice с Store */
 export default charactersSlice.reducer;
-
-/* 5. Экспортируем экшены */
 export const { removeCharacter, toggleFavorite, addCharacter } =
   charactersSlice.actions;

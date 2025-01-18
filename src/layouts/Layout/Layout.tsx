@@ -7,9 +7,9 @@ export function Layout() {
   return (
     <>
       <Header />
-      <main >
-        <Container >
-          <Outlet /> {/* Сюда рендерим контент страниц */}
+      <main>
+        <Container>
+          <Outlet />
         </Container>
       </main>
       <Footer />
