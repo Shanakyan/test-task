@@ -6,7 +6,7 @@ import App from "../App.tsx";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/test-task",
     element: <App />,
     children: [
       {

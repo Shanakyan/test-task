@@ -39,7 +39,6 @@ export interface Character {
 export const fetchCharacters = createAsyncThunk(
   "characters/fetchCharacters",
   async () => {
-    /* TODO: МОЖНО TRY CATCH И СОСТОЯНИЕ ПОД isLoading, isError сделать */
     const response = await fetch(BASE_URL);
     const data = await response.json();
     return data;

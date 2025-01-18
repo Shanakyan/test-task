@@ -98,7 +98,7 @@ function HomePage() {
         <button
           className={s.createBtn}
           type="button"
-          onClick={() => navigate("/createCharacter")}
+          onClick={() => navigate("/test-task/createCharacter")}
         >
           Create New Characters
         </button>
@@ -134,7 +134,7 @@ function HomePage() {
               toggleFavorite={() => dispatch(toggleFavorite(character))}
               isFavorite={isFavorite}
               onClick={() =>
-                navigate(`/cardInfoPage/${character.id}`, {
+                navigate(`/test-task/cardInfoPage/${character.id}`, {
                   state: character,
                 })
               }
